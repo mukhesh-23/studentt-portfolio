@@ -1,0 +1,85 @@
+.education {
+    padding: 2rem;
+    text-align: center; /* Center text for the heading */
+}
+  
+.education-heading {
+    font-size: 2rem; /* Heading size */
+    color: #282529; /* Updated heading color */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+  
+.education ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    max-width: 2000px; /* Width for better readability */
+    margin: 0 auto; /* Center the list */
+}
+  
+.education-item {
+    display: flex; /* Use flexbox to align image and text */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 2rem; /* Increased spacing between list items */
+    text-align: left; /* Align text to the left */
+    background-color: #adacac; /* Light background color for items */
+    padding: 1.5rem; /* Increased padding for list items */
+    border-radius: 8px; /* Rounded corners for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+}
+  
+.education-image {
+    width: 100px; /* Increased width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+    margin-right: 1.5rem; /* Increased space between image and text */
+}
+  
+.education-details {
+    flex-grow: 1; /* Allow text container to grow */
+}
+
+.education-button {
+    display: inline-block;
+    margin-left: 20px; /* Space between text and button */
+    padding: 12px 24px;
+    background-color: #5c7c89; /* Button color */
+    color: #ffffff; /* Text color */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.4s ease; /* Smooth transition */
+}
+
+.education-button .hover-text {
+    display: none; /* Hide the hover text initially */
+}
+
+.education-button:hover .hover-text {
+    display: inline; /* Show hover text on hover */
+}
+
+.education-button:hover span:first-child {
+    display: none; /* Hide the "DETAILS" text on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .education-image {
+        margin-bottom: 1rem; /* Space between image and text */
+    }
+
+    .education-button {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 10px; /* Space above button */
+    }
+}

@@ -1,0 +1,76 @@
+.projects {
+    padding: 2rem; /* Padding around the section */
+    text-align: center; /* Center text for the heading */
+}
+
+.projects h2 {
+    font-size: 2rem; /* Heading size */
+    color: #282529; /* Updated heading color */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.project-card {
+    display: flex; /* Use flexbox to align image and text */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center items */
+    margin-bottom: 2rem; /* Space between project cards */
+    text-align: left; /* Align text to the left */
+    background-color: #adacac; /* Light background color for project cards */
+    padding: 1.5rem; /* Padding for project cards */
+    border-radius: 8px; /* Rounded corners for project cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for project cards */
+}
+
+.project-card h4 {
+    font-size: 1.5rem; /* Project title size */
+    color: #333; /* Title color */
+    margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.project-card p {
+    margin: 0.5rem 0; /* Space between paragraphs */
+}
+
+.project-button {
+    
+    display: inline-block; /* Display button as block */
+    padding: 12px 24px; /* Padding for button */
+    background-color: #49727f; /* Updated button color */
+    color: #ffffff; /* Text color */
+    font-size: 1rem; /* Button text size */
+    font-weight: bold; /* Button text weight */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.4s ease; /* Smooth transition */
+    margin-left: 500px; /* Center the button within the container */
+}
+
+.project-button:hover {
+    background-color: #3b595e; /* Darken button color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .project-button {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 10px; /* Space above button */
+    }
+}
+
+.project-card {
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.project-details {
+    margin-top: 0.5rem; /* Space above project details */
+    background-color: #eef1f9; /* Light background for details */
+    padding: 1rem; /* Padding for details */
+    border-radius: 8px; /* Rounded corners for details */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for details */
+}

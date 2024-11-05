@@ -1,0 +1,162 @@
+.contact-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c4372;
+  margin-bottom: 10px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: #adacac;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.contact-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-image img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  color: #333;
+  transition: background-color 0.3s; /* Add transition for background color */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px 0;
+  background-color: #e0e6f4;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Ensure the border radius is consistent all around */
+  font-size: 1rem;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Style for active input field */
+.contact-form input[type="text"].active,
+.contact-form input[type="email"].active,
+.contact-form input[type="tel"].active,
+.contact-form textarea.active {
+  background-color: #d4d8e2; /* Highlight color when the field is active */
+  border-color: #5c7c89; /* Border color when active */
+}
+
+/* Hover effect for input fields */
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form input[type="tel"]:hover,
+.contact-form textarea:hover {
+  background-color: #d4d8e2; /* Change background color on hover */
+  border-color: #5c7c89; /* Change border color on hover */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form textarea:focus {
+  border-color: #5c7c89;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form .btn-primary {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #5c7c89;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px; /* Ensure the button has the same border radius */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the button */
+.contact-form .btn-primary:hover {
+  background-color: #153e4e;
+  transform: scale(1.05);
+}
+
+.contact-form .btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(44, 67, 114, 0.5);
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 16px; /* Space between input fields */
+}
+
+.input-group i {
+  position: absolute;
+  left: 12px; /* Adjust based on your preference */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5c7c89; /* Icon color */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  padding-left: 40px; /* Add padding to prevent overlap with the icon */
+  border-radius: 25px; /* Ensure the icon padding is consistent */
+}
+/* ContactPage.css */
+.contact-container {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust the translate value for a slide-in effect */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact-container.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: #adacac;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Active class for showing the container */
+.contact-container.active {
+  opacity: 1;
+  transform: translateY(0);
+}

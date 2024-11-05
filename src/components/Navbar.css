@@ -1,0 +1,110 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #adacac;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0px;
+    margin: 0px auto;
+    max-width: 1550px;
+    height: 4pc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar-logo {
+    flex: 1;
+}
+
+.navbar-logo a {
+    color: #153e4e;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Add space above the navbar links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex: 2;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: #5c7c89; /* Default color */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    padding: 4px 8px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* General hover and active effects for all navbar links */
+.navbar-links a.active,
+.navbar-links a:hover {
+    color: #ffffff;
+    background-color: #5c7c89;
+    transform: translateY(-1px);
+}
+
+/* Specific styles for the Home button to remove hover effect */
+.navbar-links a.home-link {
+    color: #5c7c89; /* Same as default color */
+}
+
+.navbar-links a.home-link:hover {
+    color: #5c7c89; /* Same as default color */
+    background-color: transparent; /* No background color change on hover */
+    transform: none; /* No transform effect on hover */
+}
+
+/* Underline effect for active and hovered links */
+.navbar-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-links a {
+        width: 100%;
+        text-align: left;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,200 @@
+.about-container {
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 3rem; /* Increased bottom padding */
+  margin: 2rem 0;
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #153e4e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centered to accommodate vertical divider */
+  padding: 2rem;
+  background-color: #adacac;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly lower */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effect */
+}
+
+.about.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to original position */
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  border-radius: 20%; /* Optional: rounding corners */
+  width: 450px; /* Increased width */
+  height: 450px; /* Increased height */
+  object-fit: cover;
+  box-shadow: 0 20px 20px rgba(8, 7, 7, 0.3);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5c7c89;
+}
+
+.email-label, .place-label {
+  color: #617f8b; /* Change this to your preferred color */
+  font-weight: bold; /* Optional: make it bold */
+  margin-right: 5px; /* Space between label and text */
+}
+
+.highlight {
+  color: #5c7d8d; /* Highlight color */
+  font-weight: bold;
+}
+
+.details-heading {
+  color: #5c7d8d; /* Color for detail headings */
+  font-weight: bold;
+  margin-bottom: 8px; /* Space below each heading */
+  margin-left: 10px;
+}
+
+.details-text {
+  color: black; /* Color for detail text */
+  margin-left: 8px; /* Space between label and text */
+}
+
+.flip-button {
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 15px;
+  background-color: #5c7d8d; /* Customize button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flip-button:hover {
+  background-color: #4a666e; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #5c7c89;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.4s ease;
+}
+
+.download-button::after {
+  content: "DOWNLOAD";
+  position: absolute;
+  top: 0;
+  right: -100%; /* Start from the right */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  transition: right 0.3s ease;
+}
+
+.download-button:hover::after {
+  right: 0; /* Slide in from the right */
+}
+
+.download-button span {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.download-button:hover span {
+  transform: translateX(-100%); /* Move text to the left */
+  opacity: 0;
+}
+.download-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #5c7c89;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  left: 15px; /* Adjusts the horizontal position */
+  top: 16px; /* Adjusts the vertical position to align with Details button */
+  transition: background-color 0.4s ease;
+}
+
+.download-button::after {
+  content: "DOWNLOAD";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  transition: right 0.3s ease;
+}
+
+.download-button:hover::after {
+  right: 0;
+}
+
+.download-button span {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.download-button:hover span {
+  transform: translateX(-100%);
+  opacity: 0;
+}

@@ -1,0 +1,92 @@
+.skills-container {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+}
+
+.skills-heading {
+  font-size: 2rem; /* Match this size with the About Me heading */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.skills-color {
+  color: #5c7d8d; /* Color for "Skills" */
+}
+
+.skills {
+  display: flex;
+  flex-direction: column; /* Change to column for stacking */
+  align-items: center;
+  padding: 2rem;
+  background-color: #adacac; /* Background color */
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #000000;
+  margin-bottom: 1.5rem; /* Margin for spacing */
+}
+
+.line-divider {
+  width: 80%; /* Changed width for better responsiveness */
+  height: 2px; /* Height adjusted for consistency */
+  background-color: #5f7c8a;
+  margin: 1rem 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill-item {
+  background: linear-gradient(145deg, #5c7c89, #3b515c);
+  color: #ffffff;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  font-size: 1rem;
+}
+
+.skill-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  color: #ffca28; /* Icon color */
+}
+
+.skill-item:hover {
+  transform: scale(1.05); /* Scale up slightly */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+  background: linear-gradient(145deg, #3b515c, #5c7c89); /* Inverted gradient on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-text {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .line-divider {
+    width: 80%;
+    height: 2px;
+    margin: 1rem 0;
+  }
+}
